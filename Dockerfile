@@ -7,7 +7,7 @@ Maintainer Carsten Seeger <cseeger@epages.com>
 # install dependencys
 RUN echo 'deb http://deb.debian.org/debian stretch-backports main' >> /etc/apt/sources.list
 RUN apt-get update \
-    && apt-get install -y apache2 libapache2-mod-php php php-bcmath php-cli php-common php-curl php-gd php-imagick php-json php-ldap php-mbstring php-mcrypt php-memcached php-mysql php-pgsql php-soap php-xml php-zip memcached unzip sudo moreutils \
+    && apt-get install -y apache2 libapache2-mod-php php php-bcmath php-cli php-common php-curl php-gd php-imagick php-json php-ldap php-mbstring php-seclib php-memcached php-mysql php-pgsql php-soap php-xml php-zip memcached unzip sudo moreutils \
     && apt-get install -y wget dialog systemd systemd-sysv expect curl \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
